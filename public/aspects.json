@@ -1,0 +1,26 @@
+[
+    {
+        "key": 1,
+        "name": "Fill up form in Medical Application",
+        "info": "Fill up the medical application form and get a chance to work with us",
+        "icon": "https://img.icons8.com/external-flatarticons-blue-flatarticons/2x/4a90e2/external-text-file-shopping-and-commerce-flatarticons-blue-flatarticons.png"
+    },
+    {
+        "key": 2,
+        "name": "Review Family Medical History",
+        "info": "A family health history is a record of health information about a person and his... ",
+        "icon": "https://img.icons8.com/ios/2x/4a90e2/document.png"
+    },
+    {
+        "key": 3,
+        "name": "Choose Between Care Programs",
+        "info": "Choosing a child care program is one of the most important and difficult",
+        "icon": "https://img.icons8.com/external-wanicon-lineal-wanicon/2x/4a90e2/external-caduceus-medical-wanicon-lineal-wanicon.png"
+    },
+    {
+        "key": 4,
+        "name": "Introduce To Qualified Doctors",
+        "info": "The medical register is an online list of doctors registered to practice in......",
+        "icon": "https://img.icons8.com/external-justicon-lineal-justicon/2x/4a90e2/external-doctor-hospital-and-medical-justicon-lineal-justicon.png"
+    }
+]

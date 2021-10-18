@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Header from './components/Header/Header';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
@@ -15,7 +16,12 @@ function App() {
 
       <Router>
         <Header></Header>
-        <Route ></Route>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route path="/home">
+          <Home></Home>
+        </Route>
 
       </Router>
     </div>

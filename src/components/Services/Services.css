@@ -1,0 +1,44 @@
+.services {
+  font-family: "Poppins", sans-serif !important;
+}
+.services-text-wrapper {
+  text-align: center;
+  background: #204066;
+  padding: 50px 0 120px 0;
+}
+.services-text-wrapper h2 {
+  font-weight: 600;
+  font-size: 35px !important;
+}
+.service-cards {
+  transform: translateY(-100px);
+}
+.service-card {
+  padding: 30px;
+  width: 90%;
+  border: 1px solid #204066;
+  transition: all 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+}
+.service-card img {
+  width: 60px;
+}
+.service-card .card-title {
+  color: #204066;
+  font-size: 22px;
+  font-weight: 600;
+}
+.service-card:hover {
+  transform: translateY(10px);
+}
+.service-card:hover .card-title {
+  color: #61ce70;
+}
+.underline {
+  width: 200px;
+  height: 0;
+  border: 0.5px solid #ffffff;
+  text-align: center;
+}

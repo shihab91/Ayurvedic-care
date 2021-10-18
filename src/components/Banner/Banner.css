@@ -1,0 +1,27 @@
+.banner {
+  background-image: linear-gradient(90deg, #e9f3fa 0%, #fbfbfb 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-wrapper {
+  padding: 100px 0 60px 0;
+}
+
+.green-text {
+  color: #12b48b;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner-text h1 {
+  color: #204066;
+  font-size: 55px;
+  font-weight: 600;
+}
+.info {
+  color: #7a7a7a;
+  font-size: 16px;
+}
+/* .banner-img {
+  width: 50%;
+} */

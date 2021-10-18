@@ -1,0 +1,41 @@
+.aspects-text h2 {
+  color: #204060;
+  font-weight: 700;
+}
+.aspects-text div {
+  width: 200px;
+  height: 0;
+  border: 0.5px solid #61ce70;
+  text-align: center;
+}
+.aspect-card {
+  cursor: pointer;
+  padding: 30px 20px;
+  transition: all 0.4s;
+  border: 1px solid rgb(245, 245, 245) !important;
+}
+.aspect-card:hover {
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 13%);
+}
+.aspect-card:hover .card-title {
+  color: #68a2e6;
+}
+.aspect-card img {
+  width: 40px;
+}
+.aspect-card .card-title {
+  font-weight: 600;
+  color: #204060;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.aspect-card .card-text {
+  font-family: "Roboto", sans-serif;
+}
+.contact-us-text {
+  font-family: "Roboto", sans-serif;
+}
+.contact-us-text span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
