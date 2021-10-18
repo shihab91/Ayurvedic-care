@@ -15,7 +15,7 @@ const Appointment = () => {
                         <button className="button">Get Appointment<BiRightArrowAlt /></button>
                     </div>
                     <div className="w-lg-50 d-flex justify-content-center mt-5 mt-lg-0">
-                        <img className="w-75 appointment-img" src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/pediatrician-examining-boy-s-spine-2021-04-02-20-48-30-utc.jpg" alt="" />
+                        <img className=" appointment-img" src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/pediatrician-examining-boy-s-spine-2021-04-02-20-48-30-utc.jpg" alt="" />
                     </div>
                 </div>
             </Container>

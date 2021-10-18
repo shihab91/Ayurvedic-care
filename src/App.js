@@ -13,7 +13,6 @@ import Home from './pages/Home/Home';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Header></Header>
         <Route exact path="/">
@@ -22,7 +21,6 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
-
       </Router>
     </div>
   );
