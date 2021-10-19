@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="banner">
             <Container>
                 <div className="banner-wrapper d-flex flex-lg-row align-items-sm-start justify-content-space-between flex-column align-items-center ">
-                    <div className="banner-text w-100 w-md-50 text-center text-lg-start">
+                    <div className="banner-text w-100 w-md-50 text-center text-lg-start mt-lg-5">
                         <p className="green-text">Medical center</p>
                         <h1>Best Medical And  Health Care Center</h1>
                         <p className="info pt-3">Personalized patient care is what sets MMCL apart. <br /> When you visit us you can expect to receive world class care.</p>

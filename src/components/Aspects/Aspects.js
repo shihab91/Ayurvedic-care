@@ -18,7 +18,7 @@ const Aspects = () => {
                 </div>
                 <Row xs={1} sm={2} md={3} lg={4} className="g-4 mt-4">
                     {
-                        aspects.map(aspect => <Col>
+                        aspects.map(aspect => <Col key={aspect.key}>
                             <Card className="aspect-card d-flex flex-column justify-content-center align-items-center">
                                 <Card.Img variant="top" src={aspect.icon} />
                                 <Card.Body>

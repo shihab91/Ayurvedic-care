@@ -2,37 +2,49 @@
     {
         "id": "1",
         "name": "Dental Sugery",
-        "description": "Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, ...",
-        "icon": "https://img.icons8.com/ios/2x/26e07f/dental-filling.png"
+        "description": "Many times, when a dentist mentions dental surgery it is met with widespread panic and fear from their patients.  The idea is that dental surgery is a painful and expensive procedure. However, what many patients don’t realize is that dental surgery is very common and includes procedures that address conditions that many people have and suffer from",
+        "icon": "https://img.icons8.com/ios/2x/26e07f/dental-filling.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/medical-hero-fighting-the-coronavirus-2021-05-04-07-27-34-utc.jpg",
+        "doctorName": "DR. WILLIAM SMITH"
     },
     {
         "id": "2",
         "name": "Cardiology",
-        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist.",
-        "icon": "https://img.icons8.com/ios-filled/2x/26e07f/hypertension.png"
+        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery.",
+        "icon": "https://img.icons8.com/ios-filled/2x/26e07f/hypertension.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/medical-experts-2021-05-02-19-42-45-utc.jpg",
+        "doctorName": "DR. NOREAIN WALTAR"
     },
     {
         "id": "3",
         "name": "General Surgery",
-        "description": "is a discipline of surgery having a central core of knowledge embracing anatomy,wound healing, shock and , and neoplasia, which are common to all surgical specialties",
-        "icon": "https://img.icons8.com/ios-filled/2x/26e07f/scissors.png"
+        "description": "General surgery is on the cutting edge as it continues to reinvent itself to the benefit of the surgical patient. Due to today's high-tech instrumentation and advanced technology, procedures such as major abdominal surgery are now replaced with minimally invasive laparoscopic techniques that often reduce pain, ",
+        "icon": "https://img.icons8.com/ios-filled/2x/26e07f/scissors.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/teacher-using-digital-tablet-AEJBEM9.jpg",
+        "doctorName": "DR. JESSICA BROWN"
     },
     {
         "id": "4",
         "name": "Neurology",
-        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities.",
-        "icon": "https://img.icons8.com/pastel-glyph/2x/26e07f/brain--v2.png"
+        "description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle.",
+        "icon": "https://img.icons8.com/pastel-glyph/2x/26e07f/brain--v2.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/back-to-school-reading-book-education-library-c-2021-04-07-00-22-19-utc.jpg ",
+        "doctorName": "DR. SADIA BROWN    "
     },
     {
         "id": "5",
         "name": "dermatology",
         "description": "Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects. A dermatologist is a specialist medical doctor who manages diseases related to skin, hair, nails, and some cosmetic problems.",
-        "icon": "https://img.icons8.com/external-wanicon-two-tone-wanicon/2x/26e07f/external-skin-allergies-wanicon-two-tone-wanicon.png"
+        "icon": "https://img.icons8.com/external-wanicon-two-tone-wanicon/2x/26e07f/external-skin-allergies-wanicon-two-tone-wanicon.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/medical-team-workers-examining-a-medical-report-KQ5AY7L.jpg",
+        "doctorName": "DR.Stephen"
     },
     {
         "id": "6",
         "name": "laboratory test",
-        "description": "A medical procedure that involves testing a sample of blood, urine, or other substance from the body. Laboratory tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time.",
-        "icon": "https://img.icons8.com/ios/2x/26e07f/test-tube.png"
+        "description": "Lab Tests Online is an award-winning health information web resource designed to help patients and caregivers understand the many lab tests that are a vital part of medical care. Since its launch in 2001, Lab Tests Online has helped millions of users learn about their tests and discuss them more clearly with their healthcare providers.",
+        "icon": "https://img.icons8.com/ios/2x/26e07f/test-tube.png",
+        "doctor": "https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/handsome-medical-doctor-2021-04-05-14-27-39-utc.jpg",
+        "doctorName": "DR.Richard"
     }
 ]

@@ -1,0 +1,31 @@
+/* .service-information {
+    width: 40% !important;
+  }
+ */
+.service-detail-wrapper {
+  font-family: "Roboto", sans-serif;
+  margin: 200px 0;
+}
+.service-information p {
+  line-height: 27px;
+  color: #204066;
+}
+.doctor-image {
+  width: 45%;
+  transition: all 0.4s;
+  border: 2px solid #61ce70;
+  border-radius: 5px;
+}
+/* .doctor-image:hover {
+  filter: brightness(80%);
+} */
+/* .doctor-name {
+  display: none;
+  transform: translateY(300px);
+  z-index: 99;
+  color: white;
+} */
+/* .doctor-image:hover ~ .doctor-name {
+  display: block;
+  transform: translateY(-100px);
+} */

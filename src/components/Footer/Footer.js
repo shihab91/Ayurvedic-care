@@ -21,15 +21,15 @@ const Footer = () => {
                     </Col>
                     <Col className="useful-links d-flex flex-column mb-4 mb-md-0">
                         <h5 className="text-white">Useful Links</h5>
-                        <NavLink to="/contactus">About us</NavLink>
-                        <NavLink to="/aboutus">Contact us</NavLink>
+                        <NavLink to="/about">About us</NavLink>
+                        <NavLink to="/contact">Contact us</NavLink>
                         <NavLink to="/login">Log in</NavLink>
                         <NavLink to="/register">Register</NavLink>
                     </Col>
                     <Col className="subscribe d-flex flex-column">
                         <h3 className="text-white">Subscribe to get news</h3>
-                        <input type="text" />
-                        <button className="button">subscribe<BiRightArrowAlt /></button>
+                        <input type="text" placeholder="Enter your email address" />
+                        <button className="button fs-5">subscribe<BiRightArrowAlt className="ms-2 fs-3" /></button>
                     </Col>
                 </Row>
             </Container>

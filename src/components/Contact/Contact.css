@@ -1,0 +1,10 @@
+.contact-wrapper {
+  font-family: "Poppins", sans-serif;
+}
+.queries {
+  font-weight: 600;
+  color: #204066;
+}
+.map {
+  transform: scale(0.9);
+}

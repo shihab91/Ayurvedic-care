@@ -1,0 +1,23 @@
+.about-page {
+  font-family: "poppins", sans-serif;
+}
+.about-text .hospital-info {
+  color: #204066;
+  font-size: 16px;
+}
+.about-text h2 {
+  font-weight: 600;
+  font-size: 38px;
+  color: #204066;
+}
+.about-image img {
+  border: 2px solid #61ce70;
+  border-radius: 5px;
+}
+.facilities svg {
+  color: #61ce70;
+  font-size: 25px;
+}
+.facilities p {
+  color: #7a7a7a;
+}
