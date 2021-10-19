@@ -7,7 +7,7 @@ const Aspects = () => {
         fetch("./aspects.json")
             .then(res => res.json())
             .then(data => setAspects(data))
-    }, [])
+    }, []);
     return (
         <div className="aspects text-center py-5 bg-white">
             <Container>
@@ -18,8 +18,8 @@ const Aspects = () => {
                 </div>
                 <Row xs={1} sm={2} md={3} lg={4} className="g-4 mt-4">
                     {
-                        aspects.map(aspect => <Col key={aspect.key}>
-                            <Card className="aspect-card d-flex flex-column justify-content-center align-items-center">
+                        aspects.map(aspect => <Col key={aspect.key} data-aos="fade-up">
+                            <Card className="aspect-card d-flex flex-column justify-content-center align-items-center" >
                                 <Card.Img variant="top" src={aspect.icon} />
                                 <Card.Body>
                                     <Card.Title>{aspect.name}</Card.Title>

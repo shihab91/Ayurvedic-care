@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <Container>
-                <Row xs={1} md={3} className="footer-wrapper">
+                <Row xs={1} lg={3} className="footer-wrapper justify-content-space-between">
                     <Col div className="mb-4 mb-md-0 footer-icon-logo">
                         <img src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/logo-01.png" alt="" />
                         <div className="mt-4 footer-icons d-flex flex-row">

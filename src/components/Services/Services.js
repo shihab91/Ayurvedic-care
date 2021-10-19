@@ -25,7 +25,7 @@ const Services = () => {
                 <Container>
                     <Row xs={1} md={2} lg={3} className="g-4 mt-4">
                         {
-                            services?.map((service) => <Col key={service.id}>
+                            services?.map((service) => <Col key={service.id} data-aos="fade-right" >
                                 <Card className="service-card d-flex flex-column justify-content-center align-items-start text-start">
                                     <Card.Img variant="top" src={service.icon} />
                                     <Card.Body>
@@ -43,7 +43,7 @@ const Services = () => {
                     <p className="mt-4 contact-us-text mb-0">Join Our conference & events know more us also be careful myself <span className="green-text">Join us here</span></p>
                 </Container>
             </div>
-        </div>
+        </div >
     );
 };
 

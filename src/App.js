@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
-} from "react-router-dom";
 
+} from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Login from './components/Login/Login';
@@ -18,9 +19,18 @@ import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Contact from './components/Contact/Contact';
-// import Services from './components/Services/Services';
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  })
   return (
     <div className="App">
       <AuthProvider>
