@@ -3,10 +3,10 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { MdLogin } from "react-icons/md";
 import { FaSignOutAlt } from "react-icons/fa";
-// import { CgLogIn } from "react-icons/Cg";
 
 import "./Header.css";
 import useAuth from "../../hooks/useAuth";
+
 const Header = () => {
     const { user, logOut } = useAuth();
 
@@ -25,22 +25,16 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="navbar-wrapper">
                         <Nav className="navbar">
-                            {/*    <NavLink
-                                to="/services"
-                                activeStyle={{ textDecoration: "underline" }}
-                            >
-                                Services
-                            </NavLink> */}
 
                             <NavLink
                                 to="/about"
-                            // activeStyle={{ textDecoration: "underline" }}
+                                activeStyle={{ textDecoration: "underline" }}
                             >
                                 About us
                             </NavLink>
                             <NavLink
                                 to="/contact"
-                            // activeStyle={{ textDecoration: "underline" }}
+                                activeStyle={{ textDecoration: "underline" }}
                             >
                                 Contact us
                             </NavLink>

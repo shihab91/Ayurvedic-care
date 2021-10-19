@@ -1,12 +1,18 @@
 .footer {
   background-color: #0b223d;
-  padding: 50px 0;
+  padding: 60px 0;
   font-family: "Roboto", sans-serif;
 }
-.footer-wrapper {
+/* .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+} */
+.footer-icon-logo {
+  width: 300px;
 }
+/* .footer-icons {
+  width: 250px;
+} */
 .footer-icons svg {
   color: #fff;
   font-size: 30px;
@@ -17,6 +23,9 @@
   color: #61ce70;
   transform: scale(1.3);
 }
+.useful-links {
+  width: 300px;
+}
 .useful-links a {
   text-decoration: none;
   color: #fff;
@@ -25,6 +34,9 @@
 }
 .useful-links a:hover {
   color: #61ce70;
+}
+.subscribe {
+  width: 320px;
 }
 .subscribe input {
   padding: 12px 10px;

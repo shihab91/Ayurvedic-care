@@ -8,7 +8,7 @@ import './Login.css'
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 const Login = () => {
-    const { user, handleGoogleSignIn, logIn, handleSetEmail, handleSetPassword, setUser, setError } = useAuth();
+    const { user, handleGoogleSignIn, logIn, handleSetEmail, handleSetPassword, setUser, setError, setIsLoading } = useAuth();
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
     const history = useHistory();
@@ -19,6 +19,7 @@ const Login = () => {
                 history.push(redirectUrl)
             })
             .catch(err => { setError(err.message) })
+            .finally(() => { setIsLoading(false) })
     }
     const handleLogIn = () => {
         logIn()
@@ -27,6 +28,7 @@ const Login = () => {
                 history.push(redirectUrl)
             })
             .catch(err => setError(err.message))
+            .finally(() => { setIsLoading(false) })
     }
     const formPreventDefault = e => {
         e.preventDefault();

@@ -4,7 +4,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import './Appointment.css'
 const Appointment = () => {
     return (
-        <div className="mb-5 ">
+        <div className="mb-5 " id="appointment">
             <Container>
                 <div className="d-flex flex-column flex-lg-row align-items-center justify-content-center">
                     <div className="appointment-text aspects-text w-lg-50 d-flex justify-content-center align-items-center flex-column text-center">

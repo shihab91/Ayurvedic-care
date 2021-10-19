@@ -8,7 +8,7 @@ import { useHistory, useLocation } from "react-router"
 
 
 const Register = () => {
-    const { user, handleGoogleSignIn, email, password, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName } = useAuth();
+    const { user, handleGoogleSignIn, email, password, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName, setIsLoading } = useAuth();
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
     const history = useHistory();
@@ -22,6 +22,7 @@ const Register = () => {
                 history.push(redirectUrl)
             })
             .catch(err => { setError(err.message) })
+            .finally(() => { setIsLoading(false) })
     }
     const createNewUser = () => {
         handleCreateNewUser()
@@ -31,6 +32,7 @@ const Register = () => {
                 history.push(redirectUrl)
             })
             .catch((err) => { setError(err.message) })
+            .finally(() => { setIsLoading(false) })
     }
 
     return (

@@ -8,7 +8,8 @@ const useFirebase = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
-    const [error, setError] = useState("")
+    const [error, setError] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
     const handleSetEmail = (e) => {
@@ -23,6 +24,7 @@ const useFirebase = () => {
         setName(e.target.value)
     }
     const handleGoogleSignIn = () => {
+        setIsLoading(true)
         return signInWithPopup(auth, googleProvider)
 
     }
@@ -34,10 +36,12 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setIsLoading(false)
         })
     }, [])
 
     const handleCreateNewUser = () => {
+        setIsLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
 
     }
@@ -50,12 +54,14 @@ const useFirebase = () => {
             .catch(err => setError(err.message))
     }
     const logIn = () => {
+        setIsLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     const logOut = () => {
         signOut(auth)
             .then(() => { })
+            .finally(() => { setIsLoading(false) })
     }
-    return { user, handleGoogleSignIn, setEmail, setPassword, error, email, password, handleSetEmail, handleSetPassword, handleCreateNewUser, logOut, handleSetName, logIn, setUser, setError, setUserName }
+    return { user, handleGoogleSignIn, setEmail, setPassword, error, email, password, handleSetEmail, handleSetPassword, handleCreateNewUser, logOut, handleSetName, logIn, setUser, setError, setUserName, setIsLoading, isLoading }
 }
 export default useFirebase;

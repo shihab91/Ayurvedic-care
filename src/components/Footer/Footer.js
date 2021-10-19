@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="footer">
             <Container>
                 <Row xs={1} md={3} className="footer-wrapper">
-                    <Col className="mb-4 mb-md-0">
+                    <Col div className="mb-4 mb-md-0 footer-icon-logo">
                         <img src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/logo-01.png" alt="" />
-                        <div className="mt-4 footer-icons">
+                        <div className="mt-4 footer-icons d-flex flex-row">
                             <FaFacebook className="me-3" />
                             <FaLinkedin className="me-3" />
                             <FaInstagramSquare className="me-3" />
@@ -27,9 +27,9 @@ const Footer = () => {
                         <NavLink to="/register">Register</NavLink>
                     </Col>
                     <Col className="subscribe d-flex flex-column">
-                        <h3 className="text-white">Subscribe to get news</h3>
+                        <h3 className="text-white mv-2">Subscribe to get news</h3>
                         <input type="text" placeholder="Enter your email address" />
-                        <button className="button fs-5">subscribe<BiRightArrowAlt className="ms-2 fs-3" /></button>
+                        <button className="button fs-5 mt-3 ">subscribe<BiRightArrowAlt className="ms-2 fs-3" /></button>
                     </Col>
                 </Row>
             </Container>
