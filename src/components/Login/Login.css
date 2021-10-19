@@ -30,3 +30,20 @@ label {
 .new-here:hover {
   color: #61ce70;
 }
+
+@media only screen and (max-width: 480px) {
+  .login-form {
+    width: 270px;
+  }
+  .input {
+    min-width: 270px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .login-form {
+    width: 250px;
+  }
+  .input {
+    min-width: 250px;
+  }
+}

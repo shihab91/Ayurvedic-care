@@ -27,6 +27,12 @@ const Header = () => {
                         <Nav className="navbar">
 
                             <NavLink
+                                to="/home"
+                                activeStyle={{ textDecoration: "underline" }}
+                            >
+                                Home
+                            </NavLink>
+                            <NavLink
                                 to="/about"
                                 activeStyle={{ textDecoration: "underline" }}
                             >

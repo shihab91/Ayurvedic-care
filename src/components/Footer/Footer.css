@@ -3,16 +3,10 @@
   padding: 60px 0;
   font-family: "Roboto", sans-serif;
 }
-/* .footer-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
 .footer-icon-logo {
   width: 300px;
 }
-/* .footer-icons {
-  width: 250px;
-} */
+
 .footer-icons svg {
   color: #fff;
   font-size: 30px;
