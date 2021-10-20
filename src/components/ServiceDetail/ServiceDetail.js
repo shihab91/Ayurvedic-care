@@ -6,6 +6,7 @@ import './ServiceDetail.css'
 
 const ServiceDetail = () => {
   const { name } = useParams();
+  console.log(name);
   const [service, setService] = useState([]);
   useEffect(() => {
     fetch(`/services.json`)
