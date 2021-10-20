@@ -30,7 +30,7 @@
   color: #61ce70;
 }
 .subscribe {
-  width: 320px;
+  width: 320px !important;
 }
 .subscribe input {
   padding: 12px 10px;

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer">
             <Container>
                 <Row xs={1} lg={3} className="footer-wrapper justify-content-space-between">
-                    <Col div className="mb-4 mb-md-0 footer-icon-logo">
+                    <Col div className="mb-4 mb-md-0 footer-icon-logo flex-grow-1 flex-grow-lg-0">
                         <img src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/logo-01.png" alt="" />
                         <div className="mt-4 footer-icons d-flex flex-row">
                             <FaFacebook className="me-3" />
@@ -20,7 +20,7 @@ const Footer = () => {
                         </div>
                     </Col>
                     <Col className="useful-links d-flex flex-column mb-4 mb-md-0">
-                        <h5 className="text-white">Useful Links</h5>
+                        <h5 className="text-white mt-4 mt-lg-0">Useful Links</h5>
                         <NavLink to="/about">About us</NavLink>
                         <NavLink to="/contact">Contact us</NavLink>
                         <NavLink to="/login">Log in</NavLink>
