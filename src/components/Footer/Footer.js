@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaFacebook, FaLinkedin, FaInstagramSquare, FaGithubSquare } from "react-icons/fa";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Footer.css'
 const Footer = () => {
@@ -13,10 +13,13 @@ const Footer = () => {
                     <Col div className="mb-4 mb-md-0 footer-icon-logo flex-grow-1 flex-grow-lg-0">
                         <img src="https://htmldesigntemplates.com/ayurvedic/wp-content/uploads/sites/8/2021/09/logo-01.png" alt="" />
                         <div className="mt-4 footer-icons d-flex flex-row">
-                            <FaFacebook className="me-3" />
-                            <FaLinkedin className="me-3" />
-                            <FaInstagramSquare className="me-3" />
-                            <FaGithubSquare className="me-3" />
+                            <a href="https://www.facebook.com/mdshihab.shumon.3" target="_blank" rel="noreferrer"><FaFacebook className="me-3" /></a>
+
+                            <a href="https://www.linkedin.com/in/shihab-shihab-5a8202216/" target="_blank" rel="noreferrer"><FaLinkedin className="me-3" /></a>
+
+                            <a href="https://www.instagram.com/shihabshumon9/" target="_blank" rel="noreferrer"><FaInstagramSquare className="me-3" /></a>
+
+                            <a href="https://github.com/shihab91/" target="_blank" rel="noreferrer"><FaGithubSquare className="me-3" /></a>
                         </div>
                     </Col>
                     <Col className="useful-links d-flex flex-column mb-4 mb-md-0">

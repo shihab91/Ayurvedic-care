@@ -2,13 +2,14 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { FcGoogle } from "react-icons/fc";
 import useAuth from '../../hooks/useAuth';
-import Swal from 'sweetalert2'
 import { Link } from 'react-router-dom';
 import { useHistory, useLocation } from "react-router"
+import useAlerts from '../../hooks/useAlerts';
 
 
 const Register = () => {
-    const { user, handleGoogleSignIn, email, password, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName, setIsLoading } = useAuth();
+    const { handleGoogleSignIn, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName, setIsLoading } = useAuth();
+    const { successAlert, errorAlert } = useAlerts();
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
     const history = useHistory();
@@ -19,9 +20,13 @@ const Register = () => {
         handleGoogleSignIn()
             .then(result => {
                 setUser(result.user)
-                history.push(redirectUrl)
+                history.push(redirectUrl);
+                successAlert(result?.user?.displayName);
             })
-            .catch(err => { setError(err.message) })
+            .catch(err => {
+                setError(err.message)
+                errorAlert();
+            })
             .finally(() => { setIsLoading(false) })
     }
     const createNewUser = () => {
@@ -30,8 +35,12 @@ const Register = () => {
                 setUser(result.user);
                 setUserName();
                 history.push(redirectUrl)
+                successAlert(result?.user?.displayName);
             })
-            .catch((err) => { setError(err.message) })
+            .catch((err) => {
+                setError(err.message)
+                errorAlert();
+            })
             .finally(() => { setIsLoading(false) })
     }
 

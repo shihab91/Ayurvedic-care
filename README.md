@@ -18,4 +18,4 @@ We Ayurvedic team have always been and will be by the side of the people. Our ho
 
 ## Technologies that were used to build this website
 
-1.React 2.JavaScript 3.React-Bootstrap 4.React-hook-form 5.React-router-dom 6.Firebase 7.HTML 8.CSS
+1.React 2.JavaScript 3.React-Bootstrap 4.React-hook-form 5.React-router-dom 6.Firebase 7.HTML 8.CSS 9.React-Rainbow-components
