@@ -4,13 +4,27 @@ import { FcGoogle } from "react-icons/fc";
 import useAuth from "../../hooks/useAuth";
 import { useHistory, useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import useAlerts from "../../hooks/useAlerts";
+import Swal from 'sweetalert2'
 import "./Login.css";
 const Login = () => {
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
     const history = useHistory();
-    const { successAlert, errorAlert } = useAlerts();
+    const errorAlert = () => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+    const successAlert = (name) => {
+        Swal.fire({
+            icon: 'success',
+            title: `Welcome ${name}`,
+            text: 'Well done , you are now logged in .'
+        })
+
+    }
     const {
         handleGoogleSignIn,
         logIn,

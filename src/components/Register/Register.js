@@ -4,17 +4,31 @@ import { FcGoogle } from "react-icons/fc";
 import useAuth from '../../hooks/useAuth';
 import { Link } from 'react-router-dom';
 import { useHistory, useLocation } from "react-router"
-import useAlerts from '../../hooks/useAlerts';
+import Swal from 'sweetalert2'
 
 
 const Register = () => {
     const { handleGoogleSignIn, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName, setIsLoading } = useAuth();
-    const { successAlert, errorAlert } = useAlerts();
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
     const history = useHistory();
     const formPreventDefault = e => {
         e.preventDefault();
+    }
+    const errorAlert = () => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+    const successAlert = (name) => {
+        Swal.fire({
+            icon: 'success',
+            title: `Welcome ${name}`,
+            text: 'Well done , you are now logged in .'
+        })
+
     }
     const signInUsingGoogle = () => {
         handleGoogleSignIn()
