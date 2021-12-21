@@ -9,7 +9,9 @@ import "./Login.css";
 const Login = () => {
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
+    console.log(redirectUrl);
     const history = useHistory();
+
     const errorAlert = () => {
         Swal.fire({
             icon: 'error',
@@ -34,6 +36,7 @@ const Login = () => {
         setError,
         setIsLoading,
     } = useAuth();
+
     const signInUsingGoogle = () => {
         handleGoogleSignIn()
             .then((result) => {

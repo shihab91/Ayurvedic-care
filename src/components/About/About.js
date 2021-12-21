@@ -2,7 +2,6 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { MdDoubleArrow } from 'react-icons/md';
 import { AiOutlineHome } from "react-icons/ai";
-
 import './About.css'
 import { Link } from 'react-router-dom';
 const About = () => {

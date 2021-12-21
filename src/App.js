@@ -55,9 +55,11 @@ function App() {
             <PrivateRoute path="/contact">
               <Contact></Contact>
             </PrivateRoute>
+
             <PrivateRoute path="/service/:name">
               <ServiceDetail></ServiceDetail>
             </PrivateRoute>
+
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

@@ -11,6 +11,7 @@ const Register = () => {
     const { handleGoogleSignIn, handleSetEmail, handleSetPassword, handleCreateNewUser, handleSetName, setUser, setError, setUserName, setIsLoading } = useAuth();
     const location = useLocation();
     const redirectUrl = location.state?.from || "/home";
+    console.log(redirectUrl);
     const history = useHistory();
     const formPreventDefault = e => {
         e.preventDefault();
